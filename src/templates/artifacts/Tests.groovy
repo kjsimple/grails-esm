@@ -1,8 +1,6 @@
-package com.gydoc.esm.domain
+@artifact.package@import grails.test.*
 
-import grails.test.*
-
-class EsmUserTests extends GrailsUnitTestCase {
+class @artifact.name@ extends @artifact.superclass@ {
     protected void setUp() {
         super.setUp()
     }

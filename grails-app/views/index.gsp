@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Welcome to Grails</title>
+        <title>ESM</title>
         <meta name="layout" content="main" />
         <style type="text/css" media="screen">
 
@@ -9,7 +9,6 @@
             margin-left:30px;
             width:228px;
             float:left;
-
         }
         .homePagePanel * {
             margin:0px;

@@ -1,8 +1,8 @@
-package com.gydoc.esm.domain
+package com.gydoc.esm.filter
 
 import grails.test.*
 
-class EsmUserTests extends GrailsUnitTestCase {
+class UserPermissionFiltersTests extends GrailsUnitTestCase {
     protected void setUp() {
         super.setUp()
     }
