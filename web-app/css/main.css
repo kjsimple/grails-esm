@@ -16,8 +16,31 @@ body {
     color: #333;
     font: 11px verdana, arial, helvetica, sans-serif;
 }
-#grailsLogo {
-	padding:20px;
+
+#appHead {
+	padding: 0;
+	height: 30px;
+	background: url('../images/headbkg.png');
+	vertical-align: bottom;
+	padding-bottom: 4px;
+}
+
+#appHead a {
+  outline: none;
+}
+
+a.appName {
+  font-size: 16px;
+  padding-right: 100px;
+}
+
+table.normal {
+  border: 0;
+}
+
+#appShell td.actions {
+  vertical-align: bottom;
+  padding-left: 20px;
 }
 
 a:link, a:visited, a:hover {

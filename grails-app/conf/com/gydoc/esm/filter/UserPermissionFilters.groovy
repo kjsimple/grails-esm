@@ -5,10 +5,10 @@ class UserPermissionFilters {
     def filters = {
         all(controller:'*', action:'*') {
             before = {
-                if (!session?.user) {
-                    render(view: '/login')
-                    return false
-                }
+//                if (!session?.user) {
+//                    render(view: '/login')
+//                    return false
+//                }
             }
             after = {
                 
