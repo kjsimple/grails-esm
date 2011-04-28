@@ -1,4 +1,6 @@
-package com.gydoc.esm.domain
+package com.gydoc.esm.controller
+
+import com.gydoc.esm.domain.Purpose
 
 class PurposeController {
 

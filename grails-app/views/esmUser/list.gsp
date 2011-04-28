@@ -29,9 +29,7 @@
                             <g:sortableColumn property="firstName" title="${message(code: 'esmUser.firstName.label', default: 'First Name')}" />
                         
                             <g:sortableColumn property="lastName" title="${message(code: 'esmUser.lastName.label', default: 'Last Name')}" />
-                        
-                            <g:sortableColumn property="password" title="${message(code: 'esmUser.password.label', default: 'Password')}" />
-                        
+
                         </tr>
                     </thead>
                     <tbody>
@@ -45,8 +43,6 @@
                             <td>${fieldValue(bean: esmUserInstance, field: "firstName")}</td>
                         
                             <td>${fieldValue(bean: esmUserInstance, field: "lastName")}</td>
-                        
-                            <td>${fieldValue(bean: esmUserInstance, field: "password")}</td>
                         
                         </tr>
                     </g:each>

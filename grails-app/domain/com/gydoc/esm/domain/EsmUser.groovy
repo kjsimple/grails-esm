@@ -6,18 +6,32 @@ class EsmUser {
     String lastName
     String userID
     String password
-    def confirmPassword
-    
+    Date dateCreated
+    Date dateUpdated
+
+    static hasMany = [roles: EsmRole]
+
     static constraints = {
         userID(blank: false, nullable: false, unique: true)
         firstName(blank: false)
         lastName(blank: false)
         password(blank: false, password: true)
-        confirmPassword()
+        dateCreated(nullable: true)
+        dateUpdated(nullable: true)
+    }
+
+    def hashPassword() {
+        password = password.encodeAsSHA()
     }
 
     def beforeInsert = {
-        password = password.encodeAsSHA()
+        dateCreated = new Date()
+        hashPassword()
+    }
+
+    def beforeUpdate = {
+        dateUpdated = new Date()
+        hashPassword()
     }
     
 }

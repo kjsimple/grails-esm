@@ -5,10 +5,13 @@ class UserPermissionFilters {
     def filters = {
         all(controller:'*', action:'*') {
             before = {
-//                if (!session?.user) {
-//                    render(view: '/login')
-//                    return false
-//                }
+                def lcName = 'security'
+                if (lcName != controllerName) {
+                    if (!session?.user) {
+                        redirect(controller: lcName)
+                        return false
+                    }
+                }
             }
             after = {
                 

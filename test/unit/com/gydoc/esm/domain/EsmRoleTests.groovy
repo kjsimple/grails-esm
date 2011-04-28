@@ -2,7 +2,7 @@ package com.gydoc.esm.domain
 
 import grails.test.*
 
-class ExpenseReportControllerTests extends ControllerUnitTestCase {
+class EsmRoleTests extends GrailsUnitTestCase {
     protected void setUp() {
         super.setUp()
     }
