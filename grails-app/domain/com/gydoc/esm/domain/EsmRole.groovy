@@ -2,11 +2,11 @@ package com.gydoc.esm.domain
 
 class EsmRole {
 
-    String roleName
+    String name
     String description
 
     static constraints = {
-        roleName(blank: false, unique: true)
+        name(blank: false, unique: true)
         description(maxSize: 1000)
     }
 
