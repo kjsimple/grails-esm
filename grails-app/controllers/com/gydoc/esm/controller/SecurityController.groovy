@@ -25,21 +25,30 @@ class SecurityController {
         homePage()
     }
 
+    def loginFailed() {
+        render(contentType: 'text/json') {
+            res = 0
+            msg = 'Invalid user name or password'
+        }
+    }
+
     def login = {
         if (checkExistingUser()) {
             return false
         }
-        if (!params.userid.trim()) {
-            render(view: 'index')
+        if (!params.userid?.trim()) {
+            loginFailed()
             return false
         }
         def user = EsmUser.findByUserID(params.userid)
         if (user?.password != params.password?.encodeAsSHA()) {
-            render(view: 'index')
+            loginFailed()
             return false
         } else {
             session.user = user
-            homePage()
+            render(contentType: 'text/json') {
+                res = 1
+            }
         }
     }
     
