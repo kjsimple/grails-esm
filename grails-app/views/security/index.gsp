@@ -8,8 +8,9 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js" type="text/javascript"></script>
     <script type="text/javascript">
       $(function() {
-          $('#loginBtn').button().click(function() {
+          $('form').bind('submit', function(evt) {
               $('#errors').empty().removeClass('errors');
+              evt.preventDefault();
               $.ajax({ type: 'POST', url: $('form').attr('action'), data: $('form').serialize(), dataType: 'json',
                        success: function(data) {
                                             if (data.res == 0) {
@@ -34,7 +35,7 @@
   <g:form action="login" method="POST">
     <input type="text" name="userid" value="" id="userid" /><br>
     <input type="password" name="password" value="" />
-    <input id="loginBtn" type="button" value="Login" />
+    <input id="loginBtn" type="submit" value="Login" />
   </g:form>
   <div id="errors"></div>
 </div>

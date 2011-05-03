@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="995f3091-8fbc-48c4-aee9-62bae2b007b8" name="Default" comment="Role">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/com/gydoc/esm/controller/SecurityController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/com/gydoc/esm/controller/SecurityController.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/security/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/security/index.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/css/main.css" afterPath="$PROJECT_DIR$/web-app/css/main.css" />
     </list>
     <ignored path="grails-esm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,7 +92,7 @@
       <file leaf-file-name="main.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="48" selection-start="78" selection-end="78" vertical-scroll-proportion="-1.826087">
+            <state line="3" column="48" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,19 +107,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.gsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/views/security/index.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="61" selection-start="414" selection-end="414" vertical-scroll-proportion="-3.652174">
+            <state line="17" column="28" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.33452594">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecurityController.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SecurityController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/gydoc/esm/controller/SecurityController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="17" selection-start="608" selection-end="608" vertical-scroll-proportion="0.39473686">
+            <state line="48" column="22" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -305,18 +303,18 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="MemberChooser.sorted" value="false" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="project.structure.side.proportion" value="0.2" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RunManager" selected="Groovy Script.Test">
     <configuration default="false" name="Test" type="GroovyScriptRunConfiguration" factoryName="Groovy Script" temporary="true">
@@ -479,7 +477,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1024" height="708" extended-state="0" />
+    <frame x="-4" y="-4" width="1288" height="778" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -574,9 +572,36 @@
         <state line="37" column="24" selection-start="1979" selection-end="1979" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="19" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/com/gydoc/esm/domain/EsmRole.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="31" selection-start="723" selection-end="723" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="48" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/js/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="56" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="16" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/com/gydoc/esm/domain/EsmUser.groovy">
@@ -584,58 +609,16 @@
         <state line="2" column="15" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/gydoc/esm/controller/SecurityController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="31" selection-start="723" selection-end="723" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="19" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="16" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="48" selection-start="78" selection-end="78" vertical-scroll-proportion="-1.826087">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/js/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="56" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/jquery-ui-1.8.12.custom/js/jquery-ui-1.8.12.custom.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="31" selection-start="1771" selection-end="1771" vertical-scroll-proportion="-0.40462428">
+        <state line="48" column="22" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/security/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="61" selection-start="414" selection-end="414" vertical-scroll-proportion="-3.652174">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/gydoc/esm/controller/SecurityController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="17" selection-start="608" selection-end="608" vertical-scroll-proportion="0.39473686">
+        <state line="17" column="28" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.33452594">
           <folding />
         </state>
       </provider>
