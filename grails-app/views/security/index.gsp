@@ -8,6 +8,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js" type="text/javascript"></script>
     <script type="text/javascript">
       $(function() {
+          $(':submit').button();
           $('form').bind('submit', function(evt) {
               $('#errors').empty().removeClass('errors');
               evt.preventDefault();
@@ -16,6 +17,7 @@
                                             if (data.res == 0) {
                                                 $('#errors').append('<ul><li></li></ul>').find('li').text(data.msg).end().addClass('errors');
                                             } else {
+                                                $('#dialog').dialog('close');
                                                 var url = window.location.href;
                                                 window.location.replace(url.substring(0, url.lastIndexOf('/')))
                                             }
@@ -23,7 +25,7 @@
               });
           });
           $('#dialog').dialog({width: 300, height: 185, closeOnEscape: false, resizable: false, hide: 'explode',
-                               show: { effect: 'slide', complete: function() {$('#userid').focus();} },
+                               show: {duration: 1500, effect: 'clip', complete: function() {$('#userid').focus();} },
                                open: function() { $(this).closest('.ui-dialog').find('.ui-dialog-titlebar-close').hide();}
                        });
       });

@@ -14,7 +14,7 @@
   <table class="normal" width="100%" border="0" cellspacing="0" cellpadding="0" id="appShell">
     <tr>
       <td id="appHead" width="100%">
-        <div>
+        <div class="actions">
           <a class="appName" href="${application.contextPath}">ESM</a>
           <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
             <g:link controller="${c.logicalPropertyName}">${c.name}</g:link>

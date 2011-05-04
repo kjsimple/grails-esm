@@ -22,11 +22,15 @@ body {
 	height: 30px;
 	background: url('../images/headbkg.png');
 	vertical-align: bottom;
-	padding-bottom: 4px;
 }
 
 #appHead a {
   outline: none;
+}
+
+#appHead .actions {
+  padding-bottom: 6px;
+  font-size: 14px;
 }
 
 a.appName {
