@@ -28,7 +28,7 @@ class SecurityController {
     def loginFailed() {
         render(contentType: 'text/json') {
             res = 0
-            msg = 'Invalid user name or password'
+            msg = message(code: "login.error.userid")
         }
     }
 

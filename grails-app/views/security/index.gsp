@@ -45,7 +45,7 @@
         <td><input type="password" id="pass" name="password" value="" /></td>
       </tr>
       <tr>
-        <td colspan="2" class="formButtons"><input id="loginBtn" type="submit" valkue="<g:message code="login.dialog.loginBtn" default="Login" />" /></td>
+        <td colspan="2" class="formButtons"><input id="loginBtn" type="submit" value="<g:message code="login.dialog.loginBtn" default="Login" />" /></td>
       </tr>
     </table>
     <div id="errors"></div>
