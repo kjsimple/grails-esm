@@ -9,7 +9,7 @@ class EsmUser {
     Date dateCreated
     Date dateUpdated
 
-    static hasMany = [roles: EsmRole]
+    static hasMany = [roles: EsmRole, modules: Module]
 
     static constraints = {
         userID(blank: false, nullable: false, unique: true)
