@@ -4,6 +4,7 @@ class EsmRole {
 
     String name
     String description
+    static hasMany = [modules: Module]
 
     static constraints = {
         name(blank: false, unique: true)
