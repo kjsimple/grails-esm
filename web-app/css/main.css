@@ -38,8 +38,10 @@ a.appName {
   margin-right: 100px;
 }
 
-table.normal {
+table.normal, table.normal td, table.normal th {
   border: 0;
+  padding: 0;
+  margin: 0;
 }
 
 table.normal .formButtons {
@@ -301,4 +303,18 @@ th.desc a {
 .buttons input.save {
     background: transparent url(../images/skin/database_save.png) 5px 50% no-repeat;
     padding-left: 28px;
+}
+
+#menus td {
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid black;
+    border-right: 0;
+    border-bottom: 1px solid #FAFAFA;
+    padding: 5px 16px 5px 16px;
+    background: #FAFAFA;
+}
+
+#menus td.lastItem {
+    border-right: 1px solid black;
 }

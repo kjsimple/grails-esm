@@ -2,7 +2,6 @@ package com.gydoc.esm.service
 
 import com.gydoc.esm.domain.Module
 import com.gydoc.esm.domain.EsmUser
-import com.gydoc.esm.TreeNode
 
 class ModuleService {
 
@@ -28,21 +27,22 @@ class ModuleService {
             loadModule(it)
         }
 
-        def res = new TreeNode()
-        def popModule
-        popModule = { m1, m2 ->
-            m2.nodeVal = m1
+        def menus = [:]
+        def popMenus
+        popMenus = { m1, m2 ->
+            m2['name'] = m1.name
             def subMods = m1.children?.toList()?.sort([compare: { a, b-> a.ord.compareTo(b.ord)}] as Comparator)
-            subMods.each {
-                if (allModules[it.name]) {
-                    def m = new TreeNode()
-                    m2.children.add(m)
-                    popModule(it, m)
-                }
+            subMods = subMods.findAll {
+                allModules[it.name]
+            }
+            m2['children'] = subMods.collect { c ->
+                def r = [:]
+                popMenus(c, r)
+                return r
             }
         }
-        popModule(rootMod, res)
-        res
+        popMenus(rootMod, menus)
+        menus
     }
 
 }
