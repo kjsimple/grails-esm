@@ -16,7 +16,7 @@
             item.text(value.name).bind('mouseover', function () {
                 var sub = $('#subItems').empty();
                 $.each(item.data('children'), function(i, v) {
-                    sub.append('<div>'+v.name+'</div>');
+                    sub.append('<div class="subItem">'+v.name+'</div>');
                 })
                 if (!$.isEmptyObject(item.data('children'))) {
                     sub.css({'top': item.outerHeight() + item.offset().top - 1, 'left': item.offset().left, 'display': ''});
