@@ -26,14 +26,16 @@
             item.text(value.name).bind('mouseover', function () {
                 var sub = $('#subItems');
                 var pMenu = elem.data('pre-menu');
-                if (pMenu != this) {
+                if (pMenu != item) {
                     sub.css({'display': 'none'});
                     if (pMenu) {
                         sub.clearQueue('close-menu'+pMenu.data('menuId'));
                     }
                 } else {
-                    //if (sub.) {
-                    //}
+                    if (sub.css('display') != 'none') {
+                        sub.clearQueue('close-menu'+pMenu.data('menuId'));
+                        return ;
+                    }
                 }
                 elem.data('pre-menu', item);
                 sub.empty();
@@ -49,6 +51,10 @@
             });
             item.bind('mouseout', function() {
                 var sub = $('#subItems');
+                if ($.isEmptyObject(item.data('children'))) {
+                    sub.css('display', 'none');
+                    return ;
+                }
                 var qName = 'close-menu'+item.data('menuId');
                 sub.delay(500, qName);
                 sub.queue(qName, function() {sub.slideToggle(500);}).dequeue(qName);
