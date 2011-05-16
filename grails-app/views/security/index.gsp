@@ -24,7 +24,7 @@
                        }
               });
           });
-          $('#dialog').dialog({width: 300, height: 200, closeOnEscape: false, resizable: false, hide: 'explode',
+          $('#dialog').dialog({width: 300, height: 176, closeOnEscape: false, resizable: false, hide: 'explode',
                                show: {duration: 1500, effect: 'clip', complete: function() {$('#userid').focus();} },
                                open: function() { $(this).closest('.ui-dialog').find('.ui-dialog-titlebar-close').hide();}
                        });
