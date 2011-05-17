@@ -319,6 +319,14 @@ th.desc a {
     border-right: 1px solid black;
 }
 
+.subItems {
+    background-color: #EFEFEF;
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    border: 1px solid black;
+}
+
 .subItem {
     font-weight: bold;
     cursor: pointer;
