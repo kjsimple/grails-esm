@@ -32,6 +32,7 @@ class ModuleService {
         popMenus = { m1, m2 ->
             m2['name'] = m1.name
             m2['id'] = m1.id
+            m2['action'] = m1.action
             def subMods = m1.children?.toList()?.sort([compare: { a, b-> a.ord.compareTo(b.ord)}] as Comparator)
             subMods = subMods.findAll {
                 allModules[it.name]

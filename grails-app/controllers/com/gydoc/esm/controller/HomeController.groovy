@@ -11,7 +11,9 @@ class HomeController {
     ModuleService moduleService
 
     def index = {
-        [menus: new JSON(moduleService.getModulesForUser(session.user.userID)).toString(true)]
+        if (!session.menus) {
+            session.menus = new JSON(moduleService.getModulesForUser(session.user.userID)).toString(true)
+        }
     }
 
 }
